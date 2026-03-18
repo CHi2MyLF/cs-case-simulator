@@ -1,0 +1,52 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CS 开箱模拟器</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="hero">
+      <h1>CS 开箱模拟器</h1>
+      <p>体验一把“又爱又恨”的开箱感觉</p>
+    </header>
+
+    <section class="panel">
+      <div class="controls">
+        <label for="caseSelect">箱子</label>
+        <select id="caseSelect"></select>
+        <button id="openBtn">开箱（$2.49）</button>
+      </div>
+
+      <div class="roulette-wrap" id="rouletteWrap">
+        <div class="pointer" aria-hidden="true"></div>
+        <div class="roulette-viewport" id="rouletteViewport">
+          <div class="roulette-track" id="rouletteTrack"></div>
+        </div>
+      </div>
+
+      <div class="result" id="resultCard">
+        <p class="hint">点击按钮开始开箱</p>
+      </div>
+
+      <div class="stats" id="stats"></div>
+    </section>
+
+    <section class="history-wrap">
+      <div class="history-head">
+        <h2>开箱记录</h2>
+        <button id="clearHistory">清空记录</button>
+      </div>
+      <ul id="history"></ul>
+      <div class="achievements">
+        <h3>成就</h3>
+        <ul id="achievementsList"></ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
